@@ -1,0 +1,203 @@
+/*CSS Reset*/
+:root {
+    line-height: 1.5;
+}
+h1, h2, h3, h4, h5, figure, p, ol, ul {
+    margin: 0;
+} 
+h1, h2, h3, h4, h5 {
+    font-size: inherit;
+    font-weight: inherit;
+}   
+img {
+    display: block;
+    max-inline-size: 100%;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+button{
+    background: none;
+    border: none; 
+}
+
+body{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    display: flex;
+    height: 100%;
+ 
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar{
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+   
+    align-items: center;
+
+
+}
+
+.form-container{
+    top: 10%;
+    height: 60%;
+    width: 70%;
+    background-color: rgb(36, 36, 36);
+    position: relative;
+    border-radius: 1.5em;
+    border: solid rgb(67, 67, 67);
+    border-width: .2px;
+    display: flex;
+   
+    overflow: hidden
+}
+
+.form-container img{
+    object-fit: cover;
+    height: 100%;
+    width: 35%;
+    align-self: stretch;
+}
+
+
+.title{
+    font-size: 3em;
+    text-align: center;
+    letter-spacing: .5em;
+}
+
+.title h1{
+    font-family: "Playfair Display";
+}
+
+.title h3{
+
+    font-family: "Lato";
+    font-weight: lighter;
+}
+
+form {
+
+    padding-left: 5%;
+    padding-top: 350px;
+    object-fit: cover;
+
+}
+
+.signin-title{
+    top: 125px;
+    left: 40%;
+    position: absolute;
+
+}
+
+.signin-title h1{
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.signin-title h3{
+    font-family: "Lato";
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+form label{
+    
+    font-family: "Lato";
+    font-weight: lighter;
+
+    letter-spacing: 0.1em;
+    display: block;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 20px;
+    margin-bottom: 3px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+
+  
+   
+}
+
+form input{
+    height: 2em;
+    background: linear-gradient(to top left, rgba(85, 85, 85, 0), rgba(85, 85, 85, 0.2));
+    background-size: 200% 200%;
+    background-position: bottom right;
+    transition: background-position 0.3s ease-in-out;
+    border: transparent;
+    font-size: 20px;
+    border-radius: .5em;
+
+    border: solid rgb(67, 67, 67);
+    border-width: .2px;
+    padding-left: 10px;
+    color: aliceblue;
+    font-family: "Lato";
+    font-weight: lighter;
+    width: 160%;
+}
+
+form p{
+
+    padding-top: 15px;
+    
+}
+
+form input:focus{
+    
+
+    outline: none;
+    caret-color: azure;
+
+}
+
+form input:hover{
+
+    background-position: top right;
+
+    
+}
+
+form .login-button{
+    padding-top: 30px;
+    padding-left: 185px;
+}
+
+.login-button button{
+    background-color: rgb(73, 73, 73);
+    border-radius: .7em;
+    width: 150px;
+    height: 35px;
+    border: solid rgb(101, 101, 101);
+    border-width: .2px;
+    font-family: "Lato";
+    color: azure;
+    font-weight: lighter;
+    font-size: 17px;
+}
+
+.login-button button:active{
+    background-color: rgb(93, 93, 93);
+    transition: background-color 0.1s ease-in-out;
+}
+.login-button button:hover{
+    opacity: 75%;
+    transition: opacity 0.05s ease-in-out;
+}
