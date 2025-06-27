@@ -52,9 +52,11 @@ body{
 }
 
 .form-container{
-    top: 10%;
-    height: 60%;
-    width: 70%;
+    top: 5%;
+    height: auto;
+    width: 80%;
+    flex-direction: row;
+
     background-color: rgb(36, 36, 36);
     position: relative;
     border-radius: 1.5em;
@@ -62,11 +64,22 @@ body{
     border-width: .2px;
     display: flex;
     overflow: hidden;
-    
+
 
 }
 
-.form-container img{
+.form-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    flex: 1;
+
+
+    
+  }
+
+.pullup-img{
     object-fit: cover;
     height: 100%;
     width: 35%;
@@ -81,6 +94,7 @@ body{
     top: 86%;
     left: 15%; 
     overflow: visible;
+
 }
 
 
@@ -109,22 +123,23 @@ body{
     transform: rotate(90deg);
 }
 
-
+.odin-logo {
+    position: absolute;
+    width: 50px;
+    height: 70px;
+    top: 86%;
+    left: 15%;
+    z-index: 2;
+  }
 
 form {
 
-    padding-left: 5%;
-    padding-top: 350px;
+    
+    
     object-fit: cover;
 
 }
 
-.signin-title{
-    top: 125px;
-    left: 40%;
-    position: absolute;
-
-}
 
 .signin-title h1{
     font-size: 50px;
@@ -133,8 +148,9 @@ form {
 
 .signin-title h3{
     font-family: "Lato";
-    font-size: 25px;
+    font-size: 20px;
     font-weight: lighter;
+    padding-bottom: 50px;
 }
 
 form label{
@@ -148,7 +164,6 @@ form label{
     background: transparent;
     outline: none;
     font-size: 20px;
-    margin-bottom: 3px;
     width: 90%;
     display: flex;
     align-items: center;
@@ -170,21 +185,22 @@ form input{
     border: solid rgb(67, 67, 67);
     border-width: .2px;
     padding-left: 10px;
+    
     color: aliceblue;
     font-family: "Lato";
     font-weight: lighter;
-    width: 160%;
+    width: 100%;
+
 }
 
 form p{
-
-    padding-top: 15px;
-    
+    padding-bottom: 20px;
 }
 
 form input:focus{
     
-
+    box-shadow: inset 0px 0px 7px -2px rgb(0, 0, 0);
+    
     outline: none;
     caret-color: azure;
 
@@ -193,13 +209,32 @@ form input:focus{
 form input:hover{
 
     background-position: top right;
-
     
+
 }
 
-form .login-button{
-    padding-top: 30px;
-    padding-left: 185px;
+.form-columns {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  
+
+  .form-row {
+    display: flex;
+    gap: 2em; /* space between columns */
+  }
+
+  .form-row p {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+.login-button{
+  display: flex;
+  justify-content: center;
 }
 
 .login-button button{
@@ -213,6 +248,7 @@ form .login-button{
     color: azure;
     font-weight: lighter;
     font-size: 17px;
+
 }
 
 .login-button button:active{

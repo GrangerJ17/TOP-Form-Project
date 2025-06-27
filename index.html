@@ -14,42 +14,77 @@
 <body tabindex = "0">
             <div class = "main">
                 <div class = "title">
-                    <h1>Fancy</h1>
+                    <h1>Odin</h1>
 
-                    <h3>TITLE</h3>
+                    <h3>SIGN IN FORM</h3>
                    
                 </div>
                 
                 <div class="form-container">
 
-                    <div class="signin-title">
-                        <h1> 
-                            Sign in 
-                        </h1>
-                        <h3>
-                            To access youre acount please sign in. 
-                        </h3>
-                    </div>
+                    
                     <img class="odin-logo" src="media/odin-lined.jpg"/> 
                     <img class="pullup-img" src="media/image-sign-in.jpg"/>
-                    
+                    <div class = "form-content">
+                    <div class="signin-title">
+                            <h1> 
+                                Sign in 
+                            </h1>
+                            <h3>
+                                To access youre acount please sign in. This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+                                Sign up now to get started.
+                            </h3>
+                        </div>
 
-                    <form action="/my-handling-form-page" method="post">
-                        <p>
-                            <label for="username">Username</label>
-                            <input type="text"> 
+                        <form class="form-columns" action="/my-handling-form-page" method="post">
+                            <div class="form-row">
+                              <p>
+                                <label for="first-name">First Name</label>
+                                <input type="text" id="first-name">
+                              </p>
+                              <p>
+                                <label for="last-name">Last Name</label>
+                                <input type="text" id="last-name">
+                              </p>
+                            </div>
+                          
+                            <div class="form-row">
+                              <p>
+                                <label for="email">E-Mail</label>
+                                <input type="email" id="email">
+                              </p>
+                              <p>
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone">
+                              </p>
+                            </div>
+                          
+                            <div class="form-row">
+                              <p>
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password"
+                                       required minlength="8"
+                                       pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}"
+                                       title="Must be at least 8 characters long, include an uppercase letter, a lowercase letter, and a number.">
+                              </p>
+                              <p>
+                                <label for="confirm">Confirm Password</label>
+                                <input type="password" id="confirm" name="confirm"
+                                       required minlength="8">
+                              </p>
+                            </div>
+                          
+                            <div class="login-button"> 
+                              <button class="submit-form" type="submit">
+                                Create Account
+                              </button>
+                            </div>
+                          </form>
+                          
+                        
                         </p>
-                        <p>
-                            <label for="password">Password</label>
-                            <input type="password">
-                        </p>
-                        <div class="login-button"> 
-                            <button class="sumbit-form" type="button">
-                                Sign in
-                            </button>
-                        </p>
-        
-                    </form>
+                        
+                    </div>
                     
                     
                     
